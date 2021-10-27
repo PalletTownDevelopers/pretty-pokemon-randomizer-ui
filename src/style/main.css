@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+    @apply bg-green-500 text-white p-1 px-2 rounded
+}
+
+.btn:not(:disabled) {
+    @apply hover:bg-green-600
+}
+
+.btn:disabled {
+    @apply opacity-50
+}
