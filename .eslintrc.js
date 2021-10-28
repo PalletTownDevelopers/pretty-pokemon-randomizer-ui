@@ -44,6 +44,14 @@ module.exports = {
                     baseIndent: 1
                 }]
             }
+        },
+        {
+            files: [
+                "**/*.json"
+            ],
+            rules: {
+                indent: ["error", 4]
+            }
         }
     ]
 }

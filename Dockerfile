@@ -2,8 +2,18 @@ FROM node as build-stage
 
 WORKDIR /app
 COPY package*.json ./
+
+#Install dependencies
 RUN npm install
 COPY . .
+
+# Run lint
+RUN npm run lint
+
+# Run audit
+RUN npm audit
+
+# Build frontend
 RUN npm run build
 
 # étape de production
