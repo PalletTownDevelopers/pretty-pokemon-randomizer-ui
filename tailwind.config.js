@@ -1,9 +1,5 @@
 module.exports = {
-    purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        extend: {},
-    },
+    content: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
     variants: {
         extend: {
             opacity: ["disabled"],
